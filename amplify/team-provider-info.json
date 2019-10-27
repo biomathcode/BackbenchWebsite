@@ -1,0 +1,19 @@
+{
+    "prob": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-backbenchwebsite-prob-233836-authRole",
+            "UnauthRoleArn": "arn:aws:iam::074161631813:role/amplify-backbenchwebsite-prob-233836-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::074161631813:role/amplify-backbenchwebsite-prob-233836-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "amplify-backbenchwebsite-prob-233836-deployment",
+            "UnauthRoleName": "amplify-backbenchwebsite-prob-233836-unauthRole",
+            "StackName": "amplify-backbenchwebsite-prob-233836",
+            "StackId": "arn:aws:cloudformation:ap-south-1:074161631813:stack/amplify-backbenchwebsite-prob-233836/cc8d6040-f8e4-11e9-be01-028f38a10716"
+        },
+        "categories": {
+            "auth": {
+                "backbenchwebsitefaa44c84": {}
+            }
+        }
+    }
+}

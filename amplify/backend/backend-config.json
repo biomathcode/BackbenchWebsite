@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"backbenchwebsitefaa44c84": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
