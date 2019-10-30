@@ -1,32 +1,45 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import { withAuthenticator } from 'aws-amplify-react'
+//Components for the website
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Blogs from './components/Blogs'
+import Contact from './components/Contact'
+import Our_Story from './components/Our_Story'
+import Videos from './components/Videos'
+import Application from './components/Applications'
+
+//TODO: sign in 
+//amplify code
+//import { withAuthenticator } from 'aws-amplify-react'
 import Amplify, { Analytics } from 'aws-amplify';
 import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
 
+
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component = {Our_Story} />
+          <Route path='/Our_Story' component={Our_Story}/>
+          <Route path='/Blogs' component={Blogs}/>
+          <Route path='/App Games' component={Application}/>
+          <Route path='/Videos' component={Videos}/>
+          <Route path='/Contact' component={Contact}/>
+        </Switch>
+        <h1> We make games, apps and videos.</h1>
+        
+        
       </div>
+      </BrowserRouter>
+      
     );
   }
 }
-
-export default withAuthenticator(App, true);
+export default App;
+//export default withAuthenticator(App, true);
