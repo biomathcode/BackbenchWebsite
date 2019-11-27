@@ -19,6 +19,17 @@ Amplify.configure(aws_exports);
 
 
 class App extends Component {
+  state = {
+    videos : [
+      {id:1, content: 'https://www.youtube.com/embed/ccTdAlVRZn0'},
+      {id:2, content: 'https://youtube.com/embed/u7qw4-QgPXk'},
+      {id:3, content: 'https://youtube.com/embed/UwN0eFvTtf4'},
+      {id:4, content: 'https://youtube.com/embed/wgzJJS75yfE'},
+      {id:5, content: 'https://youtube.com/embed/boEDJeTqah4'},
+      {id:6, content: 'https://youtube.com/embed/600HsNST7sk'},
+    ]
+
+  }
   render() {
     return (
       <BrowserRouter>
@@ -32,9 +43,6 @@ class App extends Component {
           <Route path='/Videos' component={Videos}/>
           <Route path='/Contact' component={Contact}/>
         </Switch>
-        <h1> We make games, apps and videos.</h1>
-        
-        
       </div>
       </BrowserRouter>
       
