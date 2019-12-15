@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 //Components for the website
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import Home from "./components/Home"
 import Navbar from './components/Navbar'
 import Blogs from './components/Blogs'
 import Contact from './components/Contact'
@@ -36,7 +37,7 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route exact path='/' component = {Our_Story} />
+          <Route exact path='/' component = {Home} />
           <Route path='/Our_Story' component={Our_Story}/>
           <Route path='/Blogs' component={Blogs}/>
           <Route path='/App Games' component={Application}/>

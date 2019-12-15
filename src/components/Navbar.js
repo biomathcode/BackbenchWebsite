@@ -6,7 +6,8 @@ const Navbar = (props) => {
     return(
         <nav >
             <div className="nav-wrapper black darken-3">
-                <img src={logo} alt=''  />
+
+                <Link to ="/"> <img src={logo} alt='logo' className="logo"/> </Link>
                 <ul className="right">
                     <li><Link to="/Our_Story">Our  Story</Link></li>
                     <li><Link to="/Contact">Contact</Link></li>

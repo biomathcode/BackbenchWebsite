@@ -6,8 +6,8 @@ const Blogs = (props) => {
     }, 2000); */
     return (
         <div className="container">
-            <h4 className="center">Blogs</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem voluptas saepe cupiditate nemo iusto earum, dolorem numquam ea rerum ab fugit. Illo dolor laborum odit, excepturi velit minus modi!</p>
+            <h2 className="center">Blogs</h2>
+            <h4>Coming soon ...</h4>
         </div>
     )
 };

@@ -61,10 +61,41 @@
 
 .videoContainer {
   display: flex;
-  flex-direction: column;
-  flex: wrap;
   justify-content: space-evenly;
   align-content: space-around;
-  margin: 10px;
-  padding: 10px;
+
 }
+.videoContainer >ul>iframe{
+  margin: 10px;
+  padding: 10px;  
+} 
+/* 
+.video-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+ 
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.video-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+} */
