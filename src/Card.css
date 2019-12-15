@@ -58,3 +58,13 @@
   text-decoration: none;
   display:block;
 }
+
+.videoContainer {
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
