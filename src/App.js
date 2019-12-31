@@ -13,10 +13,10 @@ import Application from './components/Applications'
 
 //TODO: sign in 
 //amplify code
-//import { withAuthenticator } from 'aws-amplify-react'
+import { withAuthenticator } from 'aws-amplify-react'
 import Amplify from 'aws-amplify';
 import aws_exports from './aws-exports';
-import { Container } from 'react-bootstrap';
+
 Amplify.configure(aws_exports);
 
 
