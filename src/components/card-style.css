@@ -1,0 +1,27 @@
+.card{
+    width: 25rem;
+
+}
+
+.card:hover{
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.25) !important;
+}
+
+
+.card-logo{
+    height: 5rem;
+    width: 5rem
+}
+
+.container-fluid{
+    padding-top: 6rem;
+}
+.overflow{
+    overflow: hidden;
+}
+.card-img-top img{
+    margin-top:1rem;
+    width: auto;
+    height: 500px;
+    max-height: 500px;
+}

@@ -4,7 +4,7 @@ import './App.css';
 //Components for the website
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Home from "./components/Home"
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 import Blogs from './components/Blogs'
 import Contact from './components/Contact'
 import Our_Story from './components/Our_Story'
@@ -14,8 +14,9 @@ import Application from './components/Applications'
 //TODO: sign in 
 //amplify code
 //import { withAuthenticator } from 'aws-amplify-react'
-import Amplify, { Analytics } from 'aws-amplify';
+import Amplify from 'aws-amplify';
 import aws_exports from './aws-exports';
+import { Container } from 'react-bootstrap';
 Amplify.configure(aws_exports);
 
 
@@ -35,15 +36,17 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div className="App">
-        <Navbar />
+        <Header />
+        
         <Switch>
           <Route exact path='/' component = {Home} />
           <Route path='/Our_Story' component={Our_Story}/>
           <Route path='/Blogs' component={Blogs}/>
-          <Route path='/App Games' component={Application}/>
+          <Route path='/Apps' component={Application}/>
           <Route path='/Videos' component={Videos}/>
           <Route path='/Contact' component={Contact}/>
         </Switch>
+        
       </div>
       </BrowserRouter>
       

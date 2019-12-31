@@ -11,9 +11,12 @@ const videoList = [
 ]
 
 const video = () => (
-    <div className="videoContainer">
+    <div className="videoparent">
+        <div className="videoContainer">
         <ul>{videoList.map(video => <iframe width="560" height="315" src={video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)}</ul>
     </div>
+    </div>
+    
 )
  
 export default video;

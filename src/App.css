@@ -2,6 +2,85 @@
   margin-left: 2%;
   width: 120px;
   height: 60px;
-  filter: invert(1)
+  
 }
 
+h1{
+  text-align: center;
+}
+.card{
+  margin: 2rem;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: rgba(133, 126, 133, 0.47) 1px -2px 21px -8px; background-color: rgb(255, 255, 255);
+}
+.card-layout{
+  align-items: center;
+  text-align: center;
+  border-bottom: black;
+}
+.card-layout >div{
+  margin: 2vh;
+}
+.card-layout ul{
+  align-items: center;
+} 
+ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+ul.social-network li {
+  display: inline;
+	
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+
+.social-network a.icoTwitter:hover i{
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	background-color: #D3D3D3;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
